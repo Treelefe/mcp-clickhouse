@@ -112,6 +112,8 @@ CLICKHOUSE_PASSWORD=clickhouse
 3. Run `uv sync` to install the dependencies. To install `uv` follow the instructions [here](https://docs.astral.sh/uv/). Then do `source .venv/bin/activate`.
 
 4. For easy testing, you can run `mcp dev mcp_clickhouse/mcp_server.py` to start the MCP server.
+   To expose an HTTP SSE interface at port 8000 run:
+   `mcp dev mcp_clickhouse/mcp_server.py -- --http-port 8000`
 
 ### Environment Variables
 
